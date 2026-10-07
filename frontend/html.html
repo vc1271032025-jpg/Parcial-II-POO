@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Biblioteca Universitaria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+        <h1>Sistema de Biblioteca Universitaria</h1>
+    </header>
+    <main>
+        <h2>Catálogo de Recursos</h2>
+        <section id="catalogo">
+            <article class="tarjeta-material">
+                <h3>Cien Años de Soledad</h3>
+                <p><strong>Tipo:</strong> Libro</p>
+                <p><strong>Autor:</strong> Gabriel García Márquez</p>
+                <p><strong>Disponibilidad:</strong> <span class="estado disponible">Disponible</span></p>
+                <button class="btn-prestamo" onclick="solicitarPrestamo('Cien Años de Soledad', 'Libro')">Solicitar Préstamo</button>
+            </article>
+            <article class="tarjeta-material">
+                <h3>National Geographic - Edición 204</h3>
+                <p><strong>Tipo:</strong> Revista</p>
+                <p><strong>Edición:</strong> N.º 204</p>
+                <p><strong>Disponibilidad:</strong> <span class="estado disponible">Disponible</span></p>
+                <button class="btn-prestamo" onclick="solicitarPrestamo('National Geographic - Edición 204', 'Revista')">Solicitar Préstamo</button>
+            </article>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
